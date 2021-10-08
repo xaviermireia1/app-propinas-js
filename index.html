@@ -21,15 +21,15 @@
         </div>
         <!--On submit siempre en etiqueta form-->
         <form onsubmit="calculo(); return false;">
-            <input type="number" name="cuenta" id="" placeholder="total de la cuenta...">
+            <input type="number" name="cuenta" id="total" placeholder="total de la cuenta...">
             <!--step="0.01"-->
-            <select name="servicio" id="">
+            <select name="servicio" id="servicio">
             <option value="0.3">30% Excelente</option>
             <option value="0.2">20% Bueno</option>
             <option value="0.1" selected>10% Normal</option>
             <option value="0.05">5% Malo</option>
         </select>
-            <input type="number" name="personas" id="" placeholder="¿cuentas personas van a pagar?">
+            <input type="number" name="personas" id="personas" placeholder="¿cuentas personas van a pagar?">
             <input type="submit" value="Calcular" name="submit">
 
         </form>
