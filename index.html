@@ -20,7 +20,7 @@
             <h2>Calculador de propinas</h2>
         </div>
         <!--On submit siempre en etiqueta form-->
-        <form onsubmit="calculo(); return false;">
+        <form onsubmit="calculo(); return false;" id="form">
             <input type="number" name="cuenta" id="total" placeholder="total de la cuenta...">
             <!--step="0.01"-->
             <select name="servicio" id="servicio">
@@ -31,8 +31,9 @@
         </select>
             <input type="number" name="personas" id="personas" placeholder="¿cuentas personas van a pagar?">
             <input type="submit" value="Calcular" name="submit">
-
+            <button onclick="limpiar();" type="button" value="reset">Limpiar</button>
         </form>
+        <div id="res"></div>
     </div>
 </body>
 
